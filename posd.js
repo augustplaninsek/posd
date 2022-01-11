@@ -27,7 +27,7 @@ const formatValue = a => {
     return a.toLocaleString('hr', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 };
 
-const total = primiciUGotovini + primiciBezgotovinski;
+const total = (primiciUGotovini + primiciBezgotovinski / brojMjeseciObavljanjaDjelatnosti) * 12;
 
 let godisnjiDohodak = 0;
 let porez = 0;
