@@ -27,21 +27,22 @@ const formatValue = a => {
     return a.toLocaleString('hr', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 };
 
-const total = primiciUGotovini + primiciBezgotovinski;
+const total = primiciUGotovini + primiciBezgotovinski; 
+const dohodovniRazred = (primiciUGotovini + primiciBezgotovinski / brojMjeseciObavljanjaDjelatnosti) * 12;
 
 let godisnjiDohodak = 0;
 let porez = 0;
 
-if (total <= 85000){
+if (dohodovniRazred <= 85000){
     godisnjiDohodak = 12750;
     porez = 1275;
-} else if (total <= 115000) {
+} else if (dohodovniRazred <= 115000) {
     godisnjiDohodak = 17250;
     porez = 1725;
-} else if (total <= 149000) {
+} else if (dohodovniRazred <= 149000) {
     godisnjiDohodak = 22425;
     porez = 2242.5;
-} else if (total <= 230000) {
+} else if (dohodovniRazred <= 230000) {
     godisnjiDohodak = 34500;
     porez = 3450;
 } else {
