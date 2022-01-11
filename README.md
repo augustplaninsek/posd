@@ -18,3 +18,6 @@ Upute:
 
 
 *Ne odgovaram za nikakve štete nastale uporabom ove skripte. Sve podatke provjerite prije spremanja.*
+
+
+![popunjavanje-posd](https://user-images.githubusercontent.com/10161900/148977176-0a8d86ce-eb9a-4fa5-97cb-1b6f55f31d13.gif)
